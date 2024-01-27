@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Digital Clock</title>
+
+</head>
+<body>
+
+  <div class="main">
+    <div class="formatSwitch">
+      <label for="formatSwitch">24-Hour Format</label>
+      <input type="checkbox" id="formatSwitch">
+    </div>
+    
+    <div class="clock">
+      <button id="showTime">
+        <img src="./assets/clock.svg" alt="" height="30" width="30"></button>
+
+      <button id="showStopwatch">
+        <img src="./assets/stopwatch.svg" alt="" height="30" width="30"></button>
+
+      <button id="showTimer">
+        <img src="./assets/timer.svg" alt="" height="30" width="30"></button>
+
+    </div>
+    
+    <div id="time">12:00:00</div>
+    
+    <div class="stopwatch">
+      <button id="startStopwatch">
+        <img src="./assets/start.svg" alt="" height="30" width="30"></button>
+
+      <button id="stopStopwatch" disabled>
+        <img src="./assets/stop.svg" alt="" height="30" width="30"></button>
+
+      <button id="resetStopwatch">
+        <img src="./assets/reset.svg" alt="" height="30" width="30"></button>
+    </div>
+    
+    <div id="stopwatch">00:00:00</div>
+    
+    <div class="timerInput">
+      <label for="timerInput">Set Timer (seconds):</label>
+      <input type="number" id="timerInput" min="1" value="10">
+    </div>
+
+    <div class="timer">
+      <button id="startTimer">
+        <img src="./assets/start.svg" alt="" height="30" width="30"></button>
+
+      <button id="stopTimer" disabled>
+        <img src="./assets/stop.svg" alt="" height="30" width="30"></button>
+
+      <button id="resetTimer">
+        <img src="./assets/reset.svg" alt="" height="30" width="30"></button>
+    </div>
+    
+    <div id="timer">00:00:00</div>
+  </div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

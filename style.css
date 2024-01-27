@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'mato-sans';
+    src: url(./fonts/MatoSans-Light.ttf);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'mato-sans';
+}
+body {
+    font-family: 'mato-sans';
+    margin: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E6E6E6;
+  }
+
+  .main{
+    background-color: #374352;
+    height: auto;
+    width: 60%;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main > div {
+    padding: 5px;
+  }
+
+  div > label {
+    color: #fff;
+    font-size: 1em;
+  }
+
+  .formatSwitch, .timerInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .timerInput > input {
+    height: 30px;
+    width: 50px;
+
+    text-align: center;
+  }
+
+  #showTime, #showStopwatch, #showTimer {
+    background-color: transparent;
+    padding: 10px;
+
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #showTime:hover, #showStopwatch:hover, #showTimer:hover {
+    cursor: pointer;
+  }
+
+  #startStopwatch, #stopStopwatch, #resetStopwatch, #startTimer, #stopTimer, #resetTimer {
+    background-color: transparent;
+    padding: 10px;
+
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #startStopwatch:hover, #stopStopwatch:hover, #resetStopwatch:hover, #startTimer:hover, #stopTimer:hover, #resetTimer:hover {
+    cursor: pointer;
+  }
+
+  #stopStopwatch, #stopTimer {
+    border-radius: 50%;
+    background-color: #53F2BC;
+  }
+
+
+
+  .clock, .stopwatch, .timer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  #stopwatch, #timer {
+    font-size: 8em;
+    display: none;
+    color: #fff;
+  }
+  #time {
+    font-size: 8em;
+    color: #fff;
+  }
+
+  button {
+    margin: 5px;
+  }
